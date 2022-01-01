@@ -21,16 +21,19 @@ standard_to = StandardScaler()
 def predict():
     Fuel_Type_Diesel = 0
     if request.method == 'POST':
-        if Year<0:
+        if Year<1:
             print("Enter a positive value")
+            break
         else:
             Year = int(request.form['Year'])
-        if Present_Price<0:
+        if Present_Price<1:
             print("Enter a positive value")
+            break
         else:
             Present_Price = float(request.form['Present_Price'])
-        if Kms_Driven<0:
+        if Kms_Driven<1:
             print("Enter a positive value")
+            break
         else:
             Kms_Driven = int(request.form['Kms_Driven'])
             Kms_Driven2 = np.log(Kms_Driven)
