@@ -13,12 +13,12 @@
     <div style=>
         <form action="{{ url_for('predict')}}" method="post">
             <img src="https://c.tenor.com/QnVigviEjaYAAAAi/budget-car-cars.gif" style="width:600px;height: 300px;">
-            <h3>Year</h3>
+            <h2>Year</h2>
             <input type="number" min="2000" max="2020" id="first" name="Year" type="number ">
-            <h3>Showroom Price?(In Lakh Rs.)</h3><br><input type="number" min="100000" max="9999999" id="second" name="Present_Price" required="required">
-            <h3>Kilometers Driven?</h3><input type="number" min="1" id="third" name="Kms_Driven" required="required">
-            <h3>How much owners previously had the car(0, 1, 2 or 3)?</h3><br><input type="number"  id="fourth" name="Owner" required="required">
-            <h3>Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
+            <h2>Showroom Price?(In Lakh Rs.)</h2><br><input type="number" min="100000" max="9999999" id="second" name="Present_Price" required="required">
+            <h2>Kilometers Driven?</h2><input type="number" min="1" id="third" name="Kms_Driven" required="required">
+            <h2>How much owners previously had the car(0, 1, 2 or 3)?</h2><br><input type="number"  id="fourth" name="Owner" required="required">
+            <h2>Fuel type?</h2><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
                 <option value="Petrol">Petrol</option>
                 <option value="Diesel">Diesel</option>
                 <option value="Diesel">CNG</option>
@@ -27,11 +27,11 @@
                 <option value="Dealer">Dealer</option>
                 <option value="Individual">Individual</option>
             </select>
-            <h3>Type of Transmission?</h3><br><select name="Transmission_Mannual" id="research" required="required">
+            <h2>Type of Transmission?</h2><br><select name="Transmission_Mannual" id="research" required="required">
                 <option value="Mannual">Manual Car</option>
                 <option value="Automatic">Automatic Car</option>
             </select>
-            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+            <br><br><b><button id="sub" type="submit ">Calculate the Selling Price</b></button>
             <br>
 
 
